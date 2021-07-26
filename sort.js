@@ -49,6 +49,17 @@ function comparePrice(a, b) {
     return 0;
 }
 
+function comparePrice2(a, b) {
+
+    if (a.P_Price > b.P_Price) {
+        return -1;
+    }
+    if (a.P_Price < b.P_Price) {
+        return 1;
+    }
+    return 0;
+}
+
 function compareName(a, b) {
     if (a.P_name < b.P_name) {
         return -1;
@@ -58,14 +69,51 @@ function compareName(a, b) {
     }
     return 0;
 }
+function compareName2(a, b) {
+    if (a.P_name > b.P_name) {
+        return -1;
+    }
+    if (a.P_name < b.P_name) {
+        return 1;
+    }
+    return 0;
+}
 
-function sortByPrice() {
+function sortByPriceHL() {
     productList.sort(comparePrice);
     row.innerHTML = "";
     productList.forEach(displayCardFunc);
 }
-function sortByName() {
+function sortByPriceLH() {
+    productList.sort(comparePrice2);
+    row.innerHTML = "";
+    productList.forEach(displayCardFunc);
+}
+function sortByNameAZ() {
     productList.sort(compareName);
     row.innerHTML = "";
     productList.forEach(displayCardFunc);
+}
+function sortByNameZA() {
+    productList.sort(compareName2);
+    row.innerHTML = "";
+    productList.forEach(displayCardFunc);
+}
+
+
+function sortBy(byWat) {
+    var text = byWat.options[byWat.selectedIndex].value;
+    if (text === "priceH-L") {
+        sortByPriceHL();
+        console.log("changed");
+    }
+    else if (text === "priceL-H") {
+        sortByPriceLH();
+    }
+    else if (text === "nameA-Z") {
+        sortByNameAZ();
+    }
+    else if (text === "nameZ-A") {
+        sortByNameZA();
+    }
 }

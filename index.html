@@ -15,14 +15,67 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="product_con">
-        <div class="row rowone" id="rowone"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SD Perfumery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Perfumes</a>
+                    <a class="nav-link" href="#">Sales</a>
+                    <a class="nav-link" href="#">Contact</a>
+
+                </div>
+
+            </div>
+
+            <div class="account">
+                <span><a class="account-item">Account</a></span>
+                <span><a class="account-item">Cart</a></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container product_con">
+        <div class="title">
+            <h1>SD Perfumery</h3>
+                <div class="sort">
+                    <select onchange="sortBy(this);">
+                        <option>Sort By</option>
+                        <option value="priceH-L">High-Low</option>
+                        <option value="priceL-H">Low-High</option>
+                        <option value="nameA-Z">A-Z </option>
+                        <option value="nameZ-A">Z-A</option>
+                    </select>
+                </div>
+        </div>
+        <div class="row rowone flex-box" id="rowone"></div>
     </div>
-    <button onclick="sortByPrice()">sort by price </button>
-    <button onclick="sortByName()">sort name</button>
+    <!-- <button onclick="sortByPrice()">sort by price </button>
+    <button onclick="sortByName()">sort name</button> -->
+    <div class="container-fluid">
+        <div class="footer">
+            <ul>
+                <li><a href="#home">Site map</a></li>
+                <li><a href="#news">Contact</a></li>
+                <li><a href="#contact">Facebook</a></li>
+                <li><a href="#about">Instagram</a></li>
+            </ul>
+
+        </div>
+    </div>
+
 </body>
 
 </html>

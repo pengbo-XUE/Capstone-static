@@ -1,0 +1,76 @@
+body{
+    background-color: #b586a5;
+}
+.flex-box {
+    display:inline;
+    display: flex;
+    flex-wrap:wrap;
+    background-color: #e3a6ac;
+}
+
+.flex-box > * {
+    flex: 0 1 10em;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+}
+
+.card > img{
+    height: 300px;
+}
+
+.container-fluid{
+    background-color: indigo;
+    position: relative;
+}
+.footer{
+    background-color: indigo;
+    bottom: 0px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.account{
+    position: absolute;
+    left: 70%;
+}
+
+.account-item{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.title{
+    background-color: rebeccapurple;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+   
+}
+
+h1{
+    color: white;
+}
+
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important ;
+}
