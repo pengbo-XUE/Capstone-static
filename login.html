@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="product.js" defer></script>
-    <script src="sort.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,10 +18,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
+    <link href="login-style.css" rel="stylesheet">
 </head>
-
 <body>
- <!--Navbar =================================================-->
+    <!--Navbar ===============================================================-->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">SD Perfumery</a>
@@ -44,27 +43,29 @@
             
         </div>
     </nav>
+    <!--Login Form ======================================================================-->
+    <div class="container">
+        <form>
+            <h2>Login</h2>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" placeholder="Username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn-primary" type="submit" value="Login"></td>
+                </tr>
+                
+            </table>
+            
 
-<!--Product Display ===============================================-->
-    <div class="container product_con">
-        <div class="title">
-            <h1>SD Perfumery</h3>
-                <div class="sort">
-                    <select onchange="sortBy(this);">
-                        <option>Sort By</option>
-                        <option value="priceH-L">High-Low</option>
-                        <option value="priceL-H">Low-High</option>
-                        <option value="nameA-Z">A-Z </option>
-                        <option value="nameZ-A">Z-A</option>
-                    </select>
-                </div>
-        </div>
-        <div class="row rowone flex-box" id="rowone"></div>
+        </form>
     </div>
-    <!-- <button onclick="sortByPrice()">sort by price </button>
-    <button onclick="sortByName()">sort name</button> -->
-
-    <!--Footer ==================================================-->
+    <!--Footer =========================================================-->
     <div class="container-fluid">
         <div class="footer">
             <ul>
@@ -76,7 +77,5 @@
 
         </div>
     </div>
-
 </body>
-
 </html>

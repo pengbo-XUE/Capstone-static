@@ -1,11 +1,24 @@
 body{
-    background-color: #b586a5;
+    background-color: white
 }
+
+.navbar{
+    background-color: #b7dde3;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:black;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link{
+    color: black;
+}
+
 .flex-box {
     display:inline;
     display: flex;
     flex-wrap:wrap;
-    background-color: #e3a6ac;
+    background-color: white;
 }
 
 .flex-box > * {
@@ -22,11 +35,11 @@ body{
 }
 
 .container-fluid{
-    background-color: indigo;
+    
     position: relative;
 }
 .footer{
-    background-color: indigo;
+    background-color: #7e989c;
     bottom: 0px;
 }
 ul{
@@ -59,7 +72,7 @@ li a{
     margin-right: 10px;
 }
 .title{
-    background-color: rebeccapurple;
+    background-color: #fff9fb;
     padding-top: 20px;
     padding-bottom: 40px;
     padding-left: 20px;
@@ -67,7 +80,7 @@ li a{
 }
 
 h1{
-    color: white;
+    color: black;
 }
 
 .row{
