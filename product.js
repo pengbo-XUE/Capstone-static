@@ -5,7 +5,11 @@ function product
         P_Price,
         onSpecial,
         stock,
-        img
+        img,
+        type,
+        size,
+        brand,
+        description
     ) {
     this.P_ID = P_ID;
     this.P_name = P_name;
@@ -13,4 +17,8 @@ function product
     this.onSpecial = onSpecial;
     this.stock = stock;
     this.img = img;
+    this.type = type;
+    this.size = size;
+    this.brand = brand;
+    this.description = description;
 }

@@ -1,8 +1,8 @@
 
-var p1 = new product(1, 'btest1', 120, false, 10, "img1.jpg");
-var p2 = new product(2, 'atest2', 110, false, 20, "img2.jpg");
-var p3 = new product(3, 'ctest3', 112, false, 13, "img3.jpg");
-var p4 = new product(4, 'dtest4', 140, false, 21, "img4.jpg");
+var p1 = new product(1, 'Bright Crystal', 4500.54, false, 10, "img5.jpg", "EDT", "30ml", "Versace");
+var p2 = new product(2, 'Light Blue ', 6798.54, false, 20, "img6.jpg", "EDP", "50ml", " Dolce & Gabbana");
+var p3 = new product(3, 'ctest3', 112.00, false, 13, "img3.jpg", "EDP", "100ml", "Versace");
+var p4 = new product(4, 'dtest4', 140.00, false, 21, "img4.jpg", "EDP", "100ml", "Versace");
 var productList = [p1, p2, p3, p4];
 
 var content = "";
@@ -23,10 +23,14 @@ function displayCardFunc(prod) {
         <div class="card" style="width: 18rem;">
             <img src="/images/${prod.img}" class="card-img-top" alt="...">
             <div class="card-body d-flex flex-column d-flex">
-                <h5 class="card-title">Miss Dior Eau de Parfum celebrates the beauty of a sensual Grasse Rose enveloped in fresh notes and woven with a lively
+                <h5>${prod.P_name} by ${prod.brand} ${prod.type} ${prod.size} </h5>
+                <h5>$${prod.P_Price}</h5>
+                <h5></h5>
+                <h5 class="card-title">
+                some description
                 </h5>
 
-                <a class="btn btn-primary mt-auto card-btn">Check it out</a>
+                <a class="btn btn-primary mt-auto card-btn">Add to cart</a>
             </div>
         </div>
     `;
