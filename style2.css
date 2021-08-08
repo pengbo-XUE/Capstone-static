@@ -14,10 +14,19 @@
   --fond-family-body-sans-serif: 'Open Sans', sans-serif;
 }
 
-html, body {
+html {
+  height: 100%;
+}
+
+body {
   margin: 0;
   font-family: var(--fond-family-body-sans-serif);
   font-size: 1.1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -59,15 +68,16 @@ header nav ul li a .material-icons {
 }
 
 header #header-brand {
-  display: flex;
-  flex-direction: row;
-  justify-content:  space-around;
   background-color: var(--color-bg-header-brand);
 }
 
 header form #header-search {
   display: inline-block;
 }
+
+header form #header-search #btnSearch {
+  padding-left: 0.5rem;
+} 
 
 header #header-brand h1 {
   margin: 0;
@@ -77,15 +87,21 @@ header #header-brand h1 {
   font-weight: 400;
 }
 
-#section-banner {
+main #section-banner {
   margin: 0;
   background-color: var(--color-bg-section-banner);
 }
 
-#section-suggested h3 {
+main #section-product-list .product-wrapper {
+  display: grid;
+}
+
+main #section-suggested h3 {
   color: var( --color-text-red);
 }
 
 footer {
+  margin-top: auto;
+  color: #fff;
   background-color: var(--color-bg-footer);
 }

@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SD Perfumery - Home</title>
-  <script src="product.js" defer></script>
-  <script src="sort.js" defer></script>
+  <script src="product2.js" defer></script>
+  <script src="sort2.js" defer></script>
   <link rel="stylesheet" href="normalize.css">
   <link href="style2.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,13 +24,15 @@
             <span class="material-icons">shopping_cart</span>
             (3)
           </a></li>
-      </ul>
-    </nav>
-    <div id="header-brand">
-      <h1>SD Perfumery</h1>
-      <form id="header-search">
-        <input type="search" /><button id="btnSearch">Search</button>
-      </form>
+        </ul>
+      </nav>
+      <div id="header-brand">
+      <div class="container">
+        <h1>SD Perfumery</h1>
+        <form id="header-search">
+          <input type="search" /><button id="btnSearch">Search</button>
+        </form>
+      </div>
     </div>
   </header>
   <main>
@@ -42,7 +44,15 @@
     </section>
     <section id="section-product-list">
       <div class="container">
-
+        <h3>Womens Perfumes</h3>
+        <select id="product-sorter">
+          <option>View By</option>
+          <option value="priceDesc">Price: Highest to Lowest</option>
+          <option value="priceAsc">Price: Lowest to Highest</option>
+          <option value="nameAsc">Product Name: A - Z</option>
+          <option value="nameDesc">Product Name: Z - A</option>
+      </select>
+        <div id="products"></div>
       </div>
     </section>
     <section id="section-suggested">
@@ -52,12 +62,10 @@
     </section>
   </main>
   <footer>
-    <small>Copyright &copy;2021 sdperfumery.lk - All rights reserved.
-    </small>
-    <small>
-      Last updated 08/08/2021
-    </small>
+    <div class="container">
+      <small>Copyright &copy;2021 sdperfumery.lk - All rights reserved. Last updated 08/08/2021
+      </small>
+    </div>
   </footer>
 </body>
-
 </html>
