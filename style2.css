@@ -7,36 +7,35 @@
   --color-bg-header-brand: #fff9fb;
   --color-bg-section-banner: #f3cabc;
   --color-bg-footer: #7e989c;
-   --color-text-red: #985855;
+  --color-text-red: #985855;
 
   --font-family-display: 'Rouge Script', serif;
   --font-family-display-serif: 'Antic Didone', serif;
-  --fond-family-body-sans-serif: 'Open Sans', sans-serif;
+  --font-family-body-sans-serif: 'Open Sans', sans-serif;
 }
 
+/* Document-wide CSS */
 html {
   height: 100%;
 }
 
 body {
-  margin: 0;
-  font-family: var(--fond-family-body-sans-serif);
-  font-size: 1.1rem;
-}
-
-body {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  font-family: var(--font-family-body-sans-serif);
+  font-size: 1.1rem;
+  line-height: 1.1rem;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1000px;
-}
-
+/* Layout CSS */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-display-serif);
   font-weight: 600;
+}
+
+header {
+  box-sizing: border-box;
 }
 
 header nav {
@@ -68,7 +67,10 @@ header nav ul li a .material-icons {
 }
 
 header #header-brand {
+  display: flex;
+  flex-direction: row;
   background-color: var(--color-bg-header-brand);
+  height: 8rem;
 }
 
 header form #header-search {
@@ -84,12 +86,19 @@ header #header-brand h1 {
   padding: 1.5rem 0 0.3rem 0;
   font-family: var(--font-family-display);
   font-size: 4.5rem;
+  line-height: 4.5rem;
   font-weight: 400;
 }
 
 main #section-banner {
   margin: 0;
   background-color: var(--color-bg-section-banner);
+  height: 8rem;
+}
+
+main #section-banner h2 {
+  margin: 0;
+  padding-top: 2rem;
 }
 
 main #section-product-list .product-wrapper {
@@ -101,7 +110,24 @@ main #section-suggested h3 {
 }
 
 footer {
+  box-sizing: border-box;
   margin-top: auto;
+  padding-top: 1.5rem;
+  height: 4rem;
   color: #fff;
   background-color: var(--color-bg-footer);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/* Element Specific CSS */
+.product {
+  width: 18rem;
+}
+
+.product img {
+  width: inherit;
 }
