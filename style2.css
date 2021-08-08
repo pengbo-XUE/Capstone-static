@@ -1,0 +1,85 @@
+/* Imports for Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Rouge+Script&display=swap');
+
+/* CSS variables for common colours */
+:root {
+  --color-bg-header-nav: #b7dde3;
+  --color-bg-header-brand: #fff9fb;
+  --color-bg-section-banner: #f3cabc;
+  --color-bg-footer: #7e989c;
+   --color-text-red: #985855;
+
+  --font-family-display: 'Rouge Script', serif;
+  --font-family-display-serif: 'Antic Didone', serif;
+  --fond-family-body-sans-serif: 'Open Sans', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  font-family: var(--fond-family-body-sans-serif);
+  font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display-serif);
+  font-weight: 600;
+}
+
+header nav {
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--color-bg-header-nav);
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+header nav ul li a {
+  color: var( --color-text-red);
+  text-decoration: none;
+}
+
+header #header-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-around;
+  background-color: var(--color-bg-header-brand);
+}
+
+header form {
+
+}
+
+header form #header-search {
+  display: inline-block;
+}
+
+header #header-brand h1 {
+  margin: 0;
+  padding: 0 0 0 2rem;
+  font-family: var(--font-family-display);
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+#section-banner {
+  background-color: var(--color-bg-section-banner);
+}
+
+#section-suggested h3 {
+  color: var( --color-text-red);
+}
+
+footer {
+  background-color: var(--color-bg-footer);
+}
