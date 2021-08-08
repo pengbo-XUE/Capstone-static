@@ -20,6 +20,11 @@ html, body {
   font-size: 1.1rem;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-display-serif);
   font-weight: 600;
@@ -49,15 +54,15 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header nav ul li a .material-icons {
+  vertical-align: bottom;
+}
+
 header #header-brand {
   display: flex;
   flex-direction: row;
   justify-content:  space-around;
   background-color: var(--color-bg-header-brand);
-}
-
-header form {
-
 }
 
 header form #header-search {
@@ -66,13 +71,14 @@ header form #header-search {
 
 header #header-brand h1 {
   margin: 0;
-  padding: 0 0 0 2rem;
+  padding: 1.5rem 0 0.3rem 0;
   font-family: var(--font-family-display);
   font-size: 4.5rem;
   font-weight: 400;
 }
 
 #section-banner {
+  margin: 0;
   background-color: var(--color-bg-section-banner);
 }
 
