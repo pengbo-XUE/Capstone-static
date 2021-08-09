@@ -15,7 +15,13 @@
 }
 
 @media only screen and (max-width: 727px) {
+  .container {
+    padding: 0 1rem;
+  }
 
+  .product {
+    min-width: calc(100% - 2rem);
+  }
 }
 @media only screen and (min-width: 728px) {
   .container {
@@ -90,16 +96,14 @@ header #header-brand {
   height: 8rem;
 }
 
-header form #header-search {
-  display: inline-block;
+header #header-brand .container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
-header form #header-search #btnSearch {
-  padding-left: 0.5rem;
-} 
-
 header #header-brand h1 {
-  margin: 0;
+  margin: 0 3rem 0 0;
   padding: 1.5rem 0 0.3rem 0;
   font-family: var(--font-family-display);
   font-size: 4.5rem;
@@ -107,15 +111,25 @@ header #header-brand h1 {
   font-weight: 400;
 }
 
+header form #header-search {
+  display: inline-block;
+}
+
+header form #header-search #btnSearch {
+  padding-left: 0.5rem;
+}
+
 main #section-banner {
   margin: 0;
+  padding-bottom: 1.5rem;
   background-color: var(--color-bg-section-banner);
-  height: 8rem;
+  min-height: 8rem;
 }
 
 main #section-banner h2 {
   margin: 0;
   padding-top: 2rem;
+  line-height: 2rem;
 }
 
 main #section-product-list .product-wrapper {
@@ -149,11 +163,19 @@ footer {
 .product {
   margin: 1rem 1rem 0 0;
   padding: 1rem;
-  width: 14rem;
-  border: 1px solid red;
+  width: 14.8rem;
+  border: 1px solid var(--color-bg-header-nav);
+  border-radius: 0.3rem;
 }
 
 .product img {
   max-width: 12rem;
   max-height: 12rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.product button {
+  width: 100%;
+  height: 2rem;
 }
