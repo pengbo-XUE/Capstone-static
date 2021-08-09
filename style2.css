@@ -1,5 +1,5 @@
 /* Imports for Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=MonteCarlo&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
 /* CSS variables for common colours */
 :root {
@@ -9,7 +9,7 @@
   --color-bg-footer: #7e989c;
   --color-text-red: #985855;
 
-  --font-family-display: 'Rouge Script', serif;
+  --font-family-display: 'MonteCarlo', serif;
   --font-family-display-serif: 'Antic Didone', serif;
   --font-family-body-sans-serif: 'Open Sans', sans-serif;
 }
@@ -136,7 +136,6 @@ footer {
 }
 
 .product img {
-  margin: 1rem;
   max-width: 12rem;
-  height: auto;
+  max-height: 12rem;
 }
