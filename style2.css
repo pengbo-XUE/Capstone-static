@@ -17,6 +17,7 @@
   
   /* These are proposed colours - we can adjust these if desired */
   --color-proposed-dk-purple: #1a0514;
+  --color-proposed-mid-purple: #aa5f9a;
 
   /* Font variables */
   --font-family-display: 'MonteCarlo', serif;
@@ -69,6 +70,19 @@ body {
   line-height: 1.1rem;
 }
 
+button, select {
+  height: 1.5rem;
+  color: var(--color-proposed-dk-purple);
+  background-color: var(--color-client-spec-1);
+  border: 1px solid var(--color-proposed-mid-purple);
+  border-radius: 0.3rem;
+}
+
+::selection {
+  color: var(--color-black);
+  background: var(--color-client-spec-1);
+}
+
 /* Layout CSS */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-display-serif);
@@ -112,7 +126,7 @@ header nav ul li a .material-icons {
 
 header #header-brand {
   background-color: var(--color-client-spec-2);
-  height: 8rem;
+  min-height: 8rem;
 }
 
 header #header-brand .container {
@@ -136,6 +150,7 @@ header #header-brand h1 {
 
 header #header-search {
   display: inline-block;
+  margin: 1.5rem 0 1rem 0;
 }
 
 header #header-search input[type=search] {
@@ -145,7 +160,6 @@ header #header-search input[type=search] {
 }
 
 header #header-search #btnSearch {
-  height: 1.5rem;
   margin-left: 0.3rem;
 }
 
