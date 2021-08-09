@@ -14,13 +14,19 @@
   --font-family-body-sans-serif: 'Open Sans', sans-serif;
 }
 
-@media only screen and (max-width: 727px) {
+/* Media Queries for Responsive Container Width */
+@media only screen and (max-width: 623px) {
   .container {
     padding: 0 1rem;
   }
 
   .product {
     min-width: calc(100% - 2rem);
+  }
+}
+@media only screen and (min-width: 624px) {
+  .container {
+    width: 36rem;
   }
 }
 @media only screen and (min-width: 728px) {
@@ -99,6 +105,7 @@ header #header-brand {
 header #header-brand .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -109,14 +116,22 @@ header #header-brand h1 {
   font-size: 4.5rem;
   line-height: 4.5rem;
   font-weight: 400;
+  min-width: 380px;
 }
 
-header form #header-search {
+header #header-search {
   display: inline-block;
 }
 
-header form #header-search #btnSearch {
-  padding-left: 0.5rem;
+header #header-search input[type=search] {
+  height: 1.5rem;
+  border: 1px solid var(--color-bg-header-nav);
+  border-radius: 0.3rem;
+}
+
+header #header-search #btnSearch {
+  height: 1.5rem;
+  margin-left: 0.3rem;
 }
 
 main #section-banner {
@@ -155,22 +170,23 @@ footer {
 
 /* Element Specific CSS */
 #product-list {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .product {
-  margin: 1rem 1rem 0 0;
   padding: 1rem;
-  width: 14.8rem;
+  width: 15rem;
   border: 1px solid var(--color-bg-header-nav);
   border-radius: 0.3rem;
 }
 
 .product img {
-  max-width: 12rem;
-  max-height: 12rem;
+  max-width: 100%;
+  max-height: 13rem;
   display: block;
   margin: 0 auto;
 }
