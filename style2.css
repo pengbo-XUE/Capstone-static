@@ -3,11 +3,11 @@
 
 /* CSS variables for common colours */
 :root {
-  --color-bg-header-nav: #b7dde3;
-  --color-bg-header-brand: #fff9fb;
-  --color-bg-section-banner: #f3cabc;
-  --color-bg-footer: #7e989c;
-  --color-text-red: #985855;
+  --color-client-spec-1: #b7dde3;
+  --color-client-spec-2: #fff9fb;
+  --color-client-spec-3: #f3cabc;
+  --color-client-spec-4: #7e989c;
+  --color-client-spec-5: #985855;
 
   --font-family-display: 'MonteCarlo', serif;
   --font-family-display-serif: 'Antic Didone', serif;
@@ -74,7 +74,7 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--color-bg-header-nav);
+  background-color: var(--color-client-spec-1);
 }
 
 header nav ul {
@@ -89,7 +89,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: var( --color-text-red);
+  color: var( --color-client-spec-5);
   text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ header nav ul li a .material-icons {
 }
 
 header #header-brand {
-  background-color: var(--color-bg-header-brand);
+  background-color: var(--color-client-spec-2);
   height: 8rem;
 }
 
@@ -113,10 +113,11 @@ header #header-brand h1 {
   margin: 0 3rem 0 0;
   padding: 1.5rem 0 0.3rem 0;
   font-family: var(--font-family-display);
+  font-weight: 400;
   font-size: 4.5rem;
   line-height: 4.5rem;
-  font-weight: 400;
   min-width: 380px;
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--color-client-spec-1);
 }
 
 header #header-search {
@@ -125,7 +126,7 @@ header #header-search {
 
 header #header-search input[type=search] {
   height: 1.5rem;
-  border: 1px solid var(--color-bg-header-nav);
+  border: 1px solid var(--color-client-spec-1);
   border-radius: 0.3rem;
 }
 
@@ -137,7 +138,7 @@ header #header-search #btnSearch {
 main #section-banner {
   margin: 0;
   padding-bottom: 1.5rem;
-  background-color: var(--color-bg-section-banner);
+  background-color: var(--color-client-spec-3);
   min-height: 8rem;
 }
 
@@ -152,7 +153,7 @@ main #section-product-list .product-wrapper {
 }
 
 main #section-suggested h3 {
-  color: var( --color-text-red);
+  color: var( --color-client-spec-5);
 }
 
 footer {
@@ -161,7 +162,7 @@ footer {
   padding-top: 1.5rem;
   height: 4rem;
   color: #fff;
-  background-color: var(--color-bg-footer);
+  background-color: var(--color-client-spec-4);
 }
 
 .container {
@@ -180,7 +181,7 @@ footer {
 .product {
   padding: 1rem;
   width: 15rem;
-  border: 1px solid var(--color-bg-header-nav);
+  border: 1px solid var(--color-client-spec-1);
   border-radius: 0.3rem;
 }
 
