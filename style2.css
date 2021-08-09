@@ -67,8 +67,6 @@ header nav ul li a .material-icons {
 }
 
 header #header-brand {
-  display: flex;
-  flex-direction: row;
   background-color: var(--color-bg-header-brand);
   height: 8rem;
 }
@@ -124,10 +122,21 @@ footer {
 }
 
 /* Element Specific CSS */
+#product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .product {
-  width: 18rem;
+  margin: 1rem 1rem 0 0;
+  padding: 1rem;
+  width: 14rem;
+  border: 1px solid red;
 }
 
 .product img {
-  width: inherit;
+  margin: 1rem;
+  max-width: 12rem;
+  height: auto;
 }

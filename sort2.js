@@ -5,7 +5,7 @@ var p4 = new product(4, 'img4.jpg', 'dtest4', 'w', 'Versace', "EDP", "100ml", 14
 var productsData = [p1, p2, p3, p4];
 
 const selectElement = document.querySelector('#product-sorter');
-const productsDisplay = document.querySelector("#products");
+const productsDisplay = document.querySelector("#product-list");
 
 selectElement.addEventListener('change', (event) => sortProductsBy(event.target.value));
 
