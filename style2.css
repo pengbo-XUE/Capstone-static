@@ -16,8 +16,9 @@
   --color-black: #000;
   
   /* These are proposed colours - we can adjust these if desired */
-  --color-proposed-dk-purple: #1a0514;
-  --color-proposed-mid-purple: #aa5f9a;
+  --color-proposed-purple-90: #1a0514;
+  --color-proposed-purple-70: #5e3455;
+  --color-proposed-purple-50: #aa5f9a;
   --color-proposed-lt-purple: #c2eaf0;
 
   /* Font variables */
@@ -71,11 +72,20 @@ body {
   line-height: 1.1rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display-serif);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-proposed-purple-70);
+}
+
 button, select {
   height: 1.5rem;
-  color: var(--color-proposed-dk-purple);
+  color: var(--color-proposed-purple-90);
   background-color: var(--color-client-spec-1);
-  border: 1px solid var(--color-proposed-mid-purple);
+  border: 1px solid var(--color-proposed-purple-50);
   border-radius: 0.3rem;
   transition: 0.5s;
 }
@@ -91,9 +101,8 @@ button:hover, select:hover {
 }
 
 /* Layout CSS */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-display-serif);
-  font-weight: 600;
+.container {
+  margin: 0 auto;
 }
 
 header {
@@ -150,7 +159,7 @@ header #header-brand h1 {
   font-weight: 400;
   font-size: 4.5rem;
   line-height: 4.5rem;
-  color: var(--color-proposed-dk-purple);
+  color: var(--color-proposed-purple-90);
   text-shadow: 0.2rem 0.2rem 0.3rem var(--color-client-spec-1);
   min-width: 380px;
 }
@@ -194,14 +203,20 @@ main #section-suggested h3 {
 footer {
   box-sizing: border-box;
   margin-top: auto;
-  padding-top: 1.5rem;
   height: 4rem;
   color: #fff;
   background-color: var(--color-client-spec-4);
 }
 
-.container {
-  margin: 0 auto;
+footer .container ul {
+  padding-left: 0;
+}
+
+footer .container ul li {
+  display: inline-block;
+  margin-right: 0.6rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
 }
 
 /* Element Specific CSS */
