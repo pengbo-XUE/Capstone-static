@@ -3,12 +3,22 @@
 
 /* CSS variables for common colours */
 :root {
+  /* These colours are specified by the client - do not change */
   --color-client-spec-1: #b7dde3;
   --color-client-spec-2: #fff9fb;
   --color-client-spec-3: #f3cabc;
   --color-client-spec-4: #7e989c;
   --color-client-spec-5: #985855;
 
+  /* Black and white, but may be changed very subtly to suit palette */
+  /* Note: please ensure correct contrast is maintained */
+  --color-white: #fff;
+  --color-black: #000;
+  
+  /* These are proposed colours - we can adjust these if desired */
+  --color-proposed-dk-purple: #1a0514;
+
+  /* Font variables */
   --font-family-display: 'MonteCarlo', serif;
   --font-family-display-serif: 'Antic Didone', serif;
   --font-family-body-sans-serif: 'Open Sans', sans-serif;
@@ -74,6 +84,9 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
+  font-size: 1rem;
+  line-height: 1rem;
   background-color: var(--color-client-spec-1);
 }
 
@@ -116,8 +129,9 @@ header #header-brand h1 {
   font-weight: 400;
   font-size: 4.5rem;
   line-height: 4.5rem;
-  min-width: 380px;
+  color: var(--color-proposed-dk-purple);
   text-shadow: 0.2rem 0.2rem 0.3rem var(--color-client-spec-1);
+  min-width: 380px;
 }
 
 header #header-search {
