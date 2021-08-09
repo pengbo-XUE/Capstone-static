@@ -5,7 +5,7 @@ var p4 = new product(4, 'img4.jpg', 'dtest4', 'w', 'Versace', "EDP", "100ml", 14
 var productsData = [p1, p2, p3, p4];
 
 const selectElement = document.querySelector('#product-sorter');
-const productsDisplay = document.querySelector("#product-list");
+const productList = document.querySelector("#product-list");
 
 selectElement.addEventListener('change', (event) => sortProductsBy(event.target.value));
 
@@ -18,8 +18,8 @@ function renderProducts(prod) {
 				<div>
 					<h4>${prod.name} (${prod.gender})</h4>
 					<p>by ${prod.brand}</p>
-					<p>${prod.type}</p> 
-					<p>${prod.size}</p> 
+					<small>${prod.type}</small> 
+					<small>${prod.size}</small> 
 					<p>Rs. ${prod.price}</p>
 					<button>
 						Add to cart
@@ -29,7 +29,7 @@ function renderProducts(prod) {
     `;
     let node = document.createElement("div");
     node.setAttribute("class", "product");
-    productsDisplay.appendChild(node);
+    productList.appendChild(node);
     node.innerHTML = productHtml;
 }
 
@@ -43,6 +43,6 @@ function sortProductsBy(sortCriteria) {
 	if (sortCriteria === "nameDesc")
     productsData.sort((a,b) => a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1);
   
-    productsDisplay.innerHTML = "";
+	productList.innerHTML = "";
   productsData.forEach(renderProducts);
 }

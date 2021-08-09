@@ -14,6 +14,25 @@
   --font-family-body-sans-serif: 'Open Sans', sans-serif;
 }
 
+@media only screen and (max-width: 727px) {
+
+}
+@media only screen and (min-width: 728px) {
+  .container {
+    width: 42.5rem;
+  }
+}
+@media only screen and (min-width: 952px) {
+  .container {
+    width: 56.5rem;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .container {
+    width: 72rem;
+  }
+}
+
 /* Document-wide CSS */
 html {
   height: 100%;
@@ -118,7 +137,6 @@ footer {
 
 .container {
   margin: 0 auto;
-  width: 1000px;
 }
 
 /* Element Specific CSS */
