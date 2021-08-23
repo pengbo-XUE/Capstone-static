@@ -14,18 +14,20 @@
 <body>
   <header>
     <nav>
-      <span id="header-phone">Call us:  001 284 227</span>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Login</a></li>
-        <li>
-          <a href="#">
-            <span class="material-icons">shopping_cart</span>
-            (3)
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <span id="header-phone">Call us:  001 284 227</span>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Login</a></li>
+          <li>
+            <a href="#">
+              <span class="material-icons">shopping_cart</span>
+              (3)
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div id="header-brand">
       <div class="container">
@@ -37,23 +39,27 @@
     </div>
   </header>
   <main>
+    <!-- NOTE: ALL PROPOSED PAGE CONTENT IS MOCKED UP IN THIS PAGE, IT WILL BE
+         SEPARATED INTO INDIVIDUAL PAGES ONCE ELEMENTS WORK AS INTENDED -->
+
+    <!-- BEGIN CONTENT FOR PRODUCT PAGE (as provided in client mockup) -->
     <section id="section-banner">
       <div class="container">
       <h2>Have you seen these amazing deals?</h2>
-      <p>Treat yourself to one of these luxurious discounts offering unbeatable value.</p>
+      <p>Treat yourself to one of these luxurious discounts with unbeatable value.</p>
       </div>
     </section>
     <section id="section-product-list">
       <div class="container">
         <h3>Womens Perfumes</h3>
         <select id="product-sorter">
-          <option>View By</option>
+          <option value="skuAsc">View By</option>
           <option value="priceDesc">Price: Highest to Lowest</option>
           <option value="priceAsc">Price: Lowest to Highest</option>
           <option value="nameAsc">Product Name: A - Z</option>
           <option value="nameDesc">Product Name: Z - A</option>
         </select>
-        <!-- The 'procuct-list' is populated using the sorting script -->
+        <!-- The 'product-list' is populated using the sorting script -->
         <div id="product-list"></div>
       </div>
     </section>
@@ -62,6 +68,82 @@
         <h3>Recommended Fragrances</h3>
     </div>
     </section>
+    <!-- BEGIN CONTENT FOR CART PAGE -->
+    <div class="temp-divider"></div> <!-- remove when separating pages -->
+    <section id="section-banner">
+      <div class="container">
+      <h2>Shopping Cart</h2>
+      <p>You have selected the following items.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <form>
+        <div class="cart-contents">
+          <ul>
+            <li class="cart-product">
+              <div class="cart-item">
+                <img src="images/img1.jpg" alt="Example Product 1">
+                <h4>Example Product 1</h4>
+                <p>Rs. 4500</p>
+                <h5>Quantity</h5>
+                <p>1</p>
+                <h5>Total</h5>
+                <p>Rs. 4500</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button>Continue Shopping</button>
+          <button>Proceed to Checkout</button>
+        </div>
+      </form>
+      </div>
+    </section>
+    <!-- BEGIN CONTENT FOR HOME PAGE -->
+    <div class="temp-divider"></div> <!-- remove when separating pages -->
+    <section id="section-banner">
+      <div class="container">
+      <h2>Welcome to SD Perfumery</h2>
+      <p>Enjoy our luxurious range of perfumes at exclusive prices.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h3>Recommended Fragrances</h3>
+      </div>
+    </section>
+    <!-- BEGIN CONTENT FOR LOG IN PAGE -->
+    <div class="temp-divider"></div> <!-- remove when separating pages -->
+    <section id="section-banner">
+      <div class="container">
+      <h2>Log In as an Existing Customer</h2>
+      <p>Please sign in below to continue.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <form>
+          <input type="text">
+          <input type="password">
+          <button>Sign In</button>
+        </form>
+      </div>
+    </section>
+    <!-- BEGIN CONTENT FOR SIGN UP PAGE -->
+    <div class="temp-divider"></div> <!-- remove when separating pages -->
+    <section id="section-banner">
+      <div class="container">
+      <h2>Sign Up as a New Customer</h2>
+      <p>Join us and take advantage of our enhanced experience for regular customers.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+      </div>
+    </section>
+    <!-- END PAGE CONTENT -->
   </main>
   <footer>
     <div class="container">

@@ -16,15 +16,25 @@
   --color-black: #000;
   
   /* These are proposed colours - we can adjust these if desired */
-  --color-proposed-purple-90: #1a0514;
-  --color-proposed-purple-70: #5e3455;
-  --color-proposed-purple-50: #aa5f9a;
-  --color-proposed-lt-purple: #c2eaf0;
+  --color-proposed-purple-90: #0d0c0e;
+  --color-proposed-purple-70: #48444d;
+  --color-proposed-purple-50: #746c7c;
+  --color-proposed-purple-35: #998fa3;
+  --color-proposed-purple-20: #ccbfda;
+  --color-proposed-purple-15: #d8cae6;
+  --color-proposed-purple-10: #e0d2ee;
 
   /* Font variables */
   --font-family-display: 'MonteCarlo', serif;
   --font-family-display-serif: 'Antic Didone', serif;
   --font-family-body-sans-serif: 'Open Sans', sans-serif;
+}
+
+/* Temporary divider class (remove when separating page content) */
+.temp-divider {
+  height: 50vh;
+  border-bottom: 1px dashed red;
+  margin-bottom: 50vh;
 }
 
 /* Media Queries for Responsive Container Width */
@@ -77,6 +87,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+h3 {
+  color: var( --color-client-spec-5);
+}
+
 a {
   color: var(--color-proposed-purple-70);
 }
@@ -84,15 +98,20 @@ a {
 button, select {
   height: 1.5rem;
   color: var(--color-proposed-purple-90);
-  background-color: var(--color-client-spec-1);
+  background-color: var(--color-proposed-purple-20);
   border: 1px solid var(--color-proposed-purple-50);
   border-radius: 0.3rem;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 button:hover, select:hover {
-  background-color: var(--color-proposed-lt-purple);
-  transition: 0.5s;
+  background-color: var(--color-proposed-purple-15);
+  transition: 0.3s;
+}
+
+button:active, select:active {
+  background-color: var(--color-proposed-purple-10);
+  transition: 0.1s;
 }
 
 ::selection {
@@ -196,15 +215,11 @@ main #section-product-list .product-wrapper {
   display: grid;
 }
 
-main #section-suggested h3 {
-  color: var( --color-client-spec-5);
-}
-
 footer {
   box-sizing: border-box;
   margin-top: auto;
   height: 4rem;
-  color: #fff;
+  color: var(--color-white);
   background-color: var(--color-client-spec-4);
 }
 
@@ -245,4 +260,19 @@ footer .container ul li {
 .product button {
   width: 100%;
   height: 2rem;
+}
+
+.cart-contents ul {
+  padding-left: 0;
+}
+
+.cart-product {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid var(--color-client-spec-1);
+  border-radius: 0.3rem;
+}
+
+.cart-product img {
+  max-width: 6em;
 }

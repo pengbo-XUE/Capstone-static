@@ -21,7 +21,7 @@ function renderProducts(prod) {
 					<small>${prod.type}</small> 
 					<small>${prod.size}</small> 
 					<p>Rs. ${prod.price}</p>
-					<button>
+					<button class="buy-${prod.sku}">
 						Add to cart
 					</button>
 				</div>
@@ -34,6 +34,8 @@ function renderProducts(prod) {
 }
 
 function sortProductsBy(sortCriteria) {
+	if (sortCriteria === "skuAsc")
+    productsData.sort((a,b) => a.sku > b.sku ? 1 : -1);
 	if (sortCriteria === "priceDesc")
     productsData.sort((a,b) => a.price < b.price ? 1 : -1);
 	if (sortCriteria === "priceAsc")
