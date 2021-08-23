@@ -19,7 +19,11 @@
   --color-proposed-purple-90: hsl(270, 8%, 10%);
   --color-proposed-purple-70: hsl(267, 6%, 30%);
   --color-proposed-purple-50: hsl(270, 7%, 50%);
+  --color-proposed-purple-45: hsl(270, 7%, 55%);
+  --color-proposed-purple-40: hsl(270, 7%, 60%);
   --color-proposed-purple-35: hsl(270, 10%, 65%);
+  --color-proposed-purple-30: hsl(270, 10%, 70%);
+  --color-proposed-purple-25: hsl(270, 10%, 75%);
   --color-proposed-purple-20: hsl(269, 27%, 80%);
   --color-proposed-purple-15: hsl(270, 36%, 85%);
   --color-proposed-purple-10: hsl(270, 45%, 90%);
