@@ -30,7 +30,7 @@
   --font-family-body-sans-serif: 'Open Sans', sans-serif;
 }
 
-/* Temporary divider class (remove when separating page content) */
+/* ***TEMPORARY DIVIDER CLASS*** (remove when separating page content) */
 .temp-divider {
   height: 50vh;
   border-bottom: 1px dashed red;
@@ -43,13 +43,17 @@
     padding: 0 1rem;
   }
 
-  .product {
+  .product, .form-small {
     min-width: calc(100% - 2rem);
   }
 }
 @media only screen and (min-width: 624px) {
   .container {
     width: 36rem;
+  }
+
+  .form-small {
+    width: 30rem;
   }
 }
 @media only screen and (min-width: 728px) {
@@ -243,7 +247,7 @@ footer .container ul li {
   gap: 1rem;
 }
 
-.product, .cart-item, .cart-total {
+.product, .cart-item, .cart-total, .form-small {
   padding: 1rem;
   border: 1px solid var(--color-client-spec-1);
   border-radius: 0.3rem;
@@ -281,9 +285,26 @@ footer .container ul li {
 }
 
 .cart-item img {
-  max-width: 6em;
+  max-width: 6rem;
 }
 
 .cart-total {
   margin-bottom: 1rem;
+}
+
+.form-small {
+  margin: 6rem auto;
+}
+
+.form-small input, .form-small button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.form-small input {
+  height: 1.5rem;
+  border: 1px solid var(--color-client-spec-1);
+  border-radius: 0.3rem;
 }
