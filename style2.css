@@ -243,11 +243,14 @@ footer .container ul li {
   gap: 1rem;
 }
 
-.product {
+.product, .cart-item {
   padding: 1rem;
-  width: 15rem;
   border: 1px solid var(--color-client-spec-1);
   border-radius: 0.3rem;
+}
+
+.product {
+  width: 15rem;
 }
 
 .product img {
@@ -266,13 +269,13 @@ footer .container ul li {
   padding-left: 0;
 }
 
-.cart-product {
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
-  padding: 1rem;
-  border: 1px solid var(--color-client-spec-1);
-  border-radius: 0.3rem;
 }
 
-.cart-product img {
+.cart-item img {
   max-width: 6em;
 }
