@@ -21,7 +21,7 @@ function renderProducts(prod) {
 					<small>${prod.type}</small> 
 					<small>${prod.size}</small> 
 					<p>Rs. ${prod.price}</p>
-					<button class="buy-${prod.sku}">
+					<button id="btn-buy-${prod.sku}" class="btn-big">
 						Add to cart
 					</button>
 				</div>
