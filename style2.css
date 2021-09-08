@@ -264,17 +264,25 @@ main #section-product-list .product-wrapper {
 footer {
   box-sizing: border-box;
   margin-top: auto;
-  height: 4rem;
+  min-height: 4rem;
   color: var(--color-white);
   background-color: var(--color-client-spec-4);
 }
 
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 footer .container ul {
+  margin: 1rem;
   padding-left: 0;
+  list-style-type: none;
 }
 
 footer .container ul li {
-  margin-right: 0.6rem;
+  margin-bottom: 0.5rem;
   font-size: 0.8rem;
   line-height: 0.8rem;
 }
@@ -302,7 +310,7 @@ footer .container ul li {
   max-width: 100%;
   max-height: 13rem;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
 }
 
 .product button {
