@@ -26,6 +26,20 @@ function renderProducts(prod) {
 					</button>
 				</div>
 			</div>
+
+			<div>
+				<img src="/images/${prod.imgUrl}" alt="${prod.title}">
+				<div class="product-summary">
+						<h4>${prod.name} (X)</h4><!-- Need to include (M) or (W) for gender here. -->
+						<p>by ${prod.brand}</p>
+						<p><small>${prod.type}</small></p>
+						<p><small>${prod.size}ml</small></p>
+				</div>
+				<div>
+						<h5>Rs. ${prod.price}</h5>
+						<button type="submit" name= "value"  value = "${prod.productId}"  >View Detail</button>
+				</div>
+			</div>
     `;
     let node = document.createElement("div");
     node.setAttribute("class", "product");
